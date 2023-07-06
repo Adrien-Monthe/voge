@@ -24,13 +24,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1 class="text-dark font-weight-bold text-8">Grid Left Sidebar</h1>
-                        <span class="sub-title text-dark">Check out our Latest News!</span>
+                        <h1 class="text-dark font-weight-bold text-8">Les Dernières Nouvelles sur VOGE FC : </h1>
+                        <span class="sub-title text-dark">Suivez les Performances de Notre Équipe !</span>
                     </div>
                     <div class="col-md-12 align-self-center order-1">
                         <ul class="breadcrumb d-block text-center">
-                            <li><a href="#">Home</a></li>
-                            <li class="active">Blog</li>
+                            <li><a href="#">Accueil</a></li>
+                            <li class="active">Actualitées</li>
                         </ul>
                     </div>
                 </div>
@@ -45,13 +45,10 @@
 
                         <h5 class="font-weight-semi-bold pt-4">Categories</h5>
                         <ul class="nav nav-list flex-column mb-5">
-                            <li class="nav-item"><a class="nav-link" href="#">Design (2)</a></li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Photos (4)</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Videos (3)</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Lifestyle (2)</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Technology (1)</a></li>
+                            @foreach($categories as $category)
+                                <li class="nav-item"><a class="nav-link" href="#">{{ $category->name }} ({{ sizeof($category->products) }})</a></li>
+                            @endforeach
+
                         </ul>
                         <div class="tabs tabs-dark mb-4 pb-2">
                             <ul class="nav nav-tabs">
@@ -61,106 +58,51 @@
                             <div class="tab-content">
                                 <div class="tab-pane active" id="popularPosts">
                                     <ul class="simple-post-list">
-                                        <li>
-                                            <div class="post-image">
-                                                <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                    <a href="#">
-                                                        <img src="/frontend/img/blog/square/blog-11.jpg" width="50" height="50" alt="">
-                                                    </a>
+                                        @foreach($popular_blogs as $blog)
+                                            <li>
+                                                <div class="post-image">
+                                                    <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                                        <a href="#">
+                                                            <img src="{{ asset($blog->image_path) }}" width="50" height="50" alt="">
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="post-info">
-                                                <a href="#">Nullam Vitae Nibh Un Odiosters</a>
-                                                <div class="post-meta">
-                                                    Nov 10, 2022
+                                                <div class="post-info">
+                                                    <a href="#">{{ $blog->title }}</a>
+                                                    <div class="post-meta">
+                                                        Nov 10, 2022
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="post-image">
-                                                <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                    <a href="#">
-                                                        <img src="/frontend/img/blog/square/blog-24.jpg" width="50" height="50" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="post-info">
-                                                <a href="#">Vitae Nibh Un Odiosters</a>
-                                                <div class="post-meta">
-                                                    Nov 10, 2022
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="post-image">
-                                                <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                    <a href="#">
-                                                        <img src="/frontend/img/blog/square/blog-42.jpg" width="50" height="50" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="post-info">
-                                                <a href="#">Odiosters Nullam Vitae</a>
-                                                <div class="post-meta">
-                                                    Nov 10, 2022
-                                                </div>
-                                            </div>
-                                        </li>
+                                            </li>
+                                        @endforeach
+
                                     </ul>
                                 </div>
                                 <div class="tab-pane" id="recentPosts">
                                     <ul class="simple-post-list">
-                                        <li>
-                                            <div class="post-image">
-                                                <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                    <a href="#">
-                                                        <img src="/frontend/img/blog/square/blog-24.jpg" width="50" height="50" alt="">
-                                                    </a>
+                                        @foreach($recent_blogs as $blog)
+                                            <li>
+                                                <div class="post-image">
+                                                    <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                                        <a href="#">
+                                                            <img src="{{ asset($blog->image_path) }}" width="50" height="50" alt="">
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="post-info">
-                                                <a href="#">Vitae Nibh Un Odiosters</a>
-                                                <div class="post-meta">
-                                                    Nov 10, 2022
+                                                <div class="post-info">
+                                                    <a href="#">{{ $blog->title }}</a>
+                                                    <div class="post-meta">
+                                                        Nov 10, 2022
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="post-image">
-                                                <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                    <a href="#">
-                                                        <img src="/frontend/img/blog/square/blog-42.jpg" width="50" height="50" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="post-info">
-                                                <a href="#">Odiosters Nullam Vitae</a>
-                                                <div class="post-meta">
-                                                    Nov 10, 2022
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="post-image">
-                                                <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                    <a href="#">
-                                                        <img src="/frontend/img/blog/square/blog-11.jpg" width="50" height="50" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="post-info">
-                                                <a href="#">Nullam Vitae Nibh Un Odiosters</a>
-                                                <div class="post-meta">
-                                                    Nov 10, 2022
-                                                </div>
-                                            </div>
-                                        </li>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <h5 class="font-weight-semi-bold pt-4">About Us</h5>
-                        <p>Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Nulla nunc dui, tristique in semper vel. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. </p>
+                        <h5 class="font-weight-semi-bold pt-4">Un Projet Ambitieux</h5>
+                        <p>Une team unique et complémentaire, liée par la passion du football porte ce projet, qui au-delà, s’engage sur la formation professionnelle et humaine des jeunes, en leur proposant également une ouverture sur le monde. </p>
                     </aside>
                 </div>
                 <div class="col-lg-9">
@@ -168,197 +110,31 @@
 
                         <div class="row px-3">
 
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img src="/frontend/img/blog/medium/blog-1.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="post-content">
-
-                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">Amazing Mountain</a></h2>
-                                        <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                                        <div class="post-meta">
-                                            <span><i class="far fa-user"></i> By <a href="#">Bob Doe</a> </span>
-                                            <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                            <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                            <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
+                            @foreach($blogs as $blog)
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <article class="post post-medium border-0 pb-0 mb-5">
+                                        <div class="post-image">
+                                            <a href="#">
+                                                <img src="{{ asset($blog->image_path) }}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="{{ $blog->title }}" />
+                                            </a>
                                         </div>
 
-                                    </div>
-                                </article>
-                            </div>
+                                        <div class="post-content">
 
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img src="/frontend/img/blog/medium/blog-2.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                                        </a>
-                                    </div>
+                                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">{{ $blog->title }}</a></h2>
+                                            <p>{{ $blog->short_description }}</p>
 
-                                    <div class="post-content">
+                                            <div class="post-meta">
+                                                <span><i class="far fa-user"></i> By <a href="#">Bob Doe</a> </span>
+                                                <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
+                                                <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
+                                                <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
+                                            </div>
 
-                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">Creative Business</a></h2>
-                                        <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                                        <div class="post-meta">
-                                            <span><i class="far fa-user"></i> By <a href="#">John Doe</a> </span>
-                                            <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                            <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                            <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
                                         </div>
-
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img src="/frontend/img/blog/medium/blog-3.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="post-content">
-
-                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">Unlimited Ways</a></h2>
-                                        <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                                        <div class="post-meta">
-                                            <span><i class="far fa-user"></i> By <a href="#">John Doe</a> </span>
-                                            <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                            <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                            <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-                                        </div>
-
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img src="/frontend/img/blog/medium/blog-4.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="post-content">
-
-                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">Developer Life</a></h2>
-                                        <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                                        <div class="post-meta">
-                                            <span><i class="far fa-user"></i> By <a href="#">Jessica Doe</a> </span>
-                                            <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                            <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                            <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-                                        </div>
-
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img src="/frontend/img/blog/medium/blog-5.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="post-content">
-
-                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">The Blue Sky</a></h2>
-                                        <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                                        <div class="post-meta">
-                                            <span><i class="far fa-user"></i> By <a href="#">Robert Doe</a> </span>
-                                            <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                            <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                            <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-                                        </div>
-
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img src="/frontend/img/blog/medium/blog-6.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="post-content">
-
-                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">Night Life</a></h2>
-                                        <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                                        <div class="post-meta">
-                                            <span><i class="far fa-user"></i> By <a href="#">Robert Doe</a> </span>
-                                            <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                            <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                            <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-                                        </div>
-
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img src="/frontend/img/blog/medium/blog-7.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="post-content">
-
-                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">Another World Perspective</a></h2>
-                                        <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                                        <div class="post-meta">
-                                            <span><i class="far fa-user"></i> By <a href="#">John Doe</a> </span>
-                                            <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                            <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                            <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-                                        </div>
-
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <article class="post post-medium border-0 pb-0 mb-5">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img src="/frontend/img/blog/medium/blog-8.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="post-content">
-
-                                        <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">The Creative Team</a></h2>
-                                        <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                                        <div class="post-meta">
-                                            <span><i class="far fa-user"></i> By <a href="#">Robert Doe</a> </span>
-                                            <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                            <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                            <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-                                        </div>
-
-                                    </div>
-                                </article>
-                            </div>
+                                    </article>
+                                </div>
+                            @endforeach
 
                         </div>
 

@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('faqs', function (Blueprint $table) {
             $table->id();
+            $table->json("question")->nullable();
+            $table->json("answer")->nullable();
+            $table->timestamp("deleted_at")->default(null)->nullable();
+            $table->foreignId("added_by")->nullable();
             $table->timestamps();
         });
     }

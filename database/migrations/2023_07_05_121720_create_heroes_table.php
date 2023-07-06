@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('heroes', function (Blueprint $table) {
             $table->id();
+            $table->json("heading_title")->nullable();
+            $table->json("heading_description")->nullable();
+            $table->json("heading_btn")->nullable();
+            $table->string("heading_link")->nullable();
+            $table->boolean("status")->default(false);
+            $table->text("heading_bg_image")->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
