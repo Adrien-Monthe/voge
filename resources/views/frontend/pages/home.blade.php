@@ -246,7 +246,7 @@
                                     <div class="box-content px-lg-4 px-xl-5 py-lg-5">
                                         <div class="py-5 my-4">
                                             <a class="text-decoration-none lightbox" href="https://vimeo.com/45830194" data-plugin-options="{'type':'iframe'}">
-                                                <img class="icon-animated" width="60" src="vendor/linea-icons/linea-music/icons/play-button.svg" alt="" data-icon data-plugin-options="{'color': '#FFF', 'animated': true, 'delay': 600, 'strokeBased': true}" />
+                                                <img class="icon-animated" width="60" src="/frontend/vendor/linea-icons/linea-music/icons/play-button.svg" alt="" data-icon data-plugin-options="{'color': '#FFF', 'animated': true, 'delay': 600, 'strokeBased': true}" />
                                             </a>
                                         </div>
                                     </div>
