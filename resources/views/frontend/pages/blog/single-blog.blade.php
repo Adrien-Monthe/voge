@@ -46,7 +46,7 @@
                         <h5 class="font-weight-semi-bold pt-4">Categories</h5>
                         <ul class="nav nav-list flex-column mb-5">
                             @foreach($categories as $category)
-                                <li class="nav-item"><a class="nav-link" href="#">{{ $category->name }} ({{ sizeof($category->products) }})</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">{{ $category->name }} ({{ sizeof($category->blogs) }})</a></li>
                             @endforeach
 
                         </ul>
