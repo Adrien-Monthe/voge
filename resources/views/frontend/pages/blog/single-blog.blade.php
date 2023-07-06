@@ -58,17 +58,17 @@
                             <div class="tab-content">
                                 <div class="tab-pane active" id="popularPosts">
                                     <ul class="simple-post-list">
-                                        @foreach($popular_blogs as $blog)
+                                        @foreach($popular_blogs as $pblog)
                                             <li>
                                                 <div class="post-image">
                                                     <div class="img-thumbnail img-thumbnail-no-borders d-block">
                                                         <a href="#">
-                                                            <img src="{{ asset($blog->image_path) }}" width="50" height="50" alt="">
+                                                            <img src="{{ asset($pblog->image_path) }}" width="50" height="50" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div class="post-info">
-                                                    <a href="#">{{ $blog->title }}</a>
+                                                    <a href="#">{{ $pblog->title }}</a>
                                                     <div class="post-meta">
                                                         Nov 10, 2022
                                                     </div>
@@ -80,17 +80,17 @@
                                 </div>
                                 <div class="tab-pane" id="recentPosts">
                                     <ul class="simple-post-list">
-                                        @foreach($recent_blogs as $blog)
+                                        @foreach($recent_blogs as $rblog)
                                             <li>
                                                 <div class="post-image">
                                                     <div class="img-thumbnail img-thumbnail-no-borders d-block">
                                                         <a href="#">
-                                                            <img src="{{ asset($blog->image_path) }}" width="50" height="50" alt="">
+                                                            <img src="{{ asset($rblog->image_path) }}" width="50" height="50" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div class="post-info">
-                                                    <a href="#">{{ $blog->title }}</a>
+                                                    <a href="#">{{ $rblog->title }}</a>
                                                     <div class="post-meta">
                                                         Nov 10, 2022
                                                     </div>
