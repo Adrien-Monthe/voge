@@ -114,21 +114,21 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
-                                            <a href="#">
+                                            <a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}">
                                                 <img src="{{ asset($blog->image_path) }}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="{{ $blog->title }}" />
                                             </a>
                                         </div>
 
                                         <div class="post-content">
 
-                                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="#">{{ $blog->title }}</a></h2>
+                                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}">{{ $blog->title }}</a></h2>
                                             <p>{{ $blog->short_description }}</p>
 
                                             <div class="post-meta">
-                                                <span><i class="far fa-user"></i> By <a href="#">Bob Doe</a> </span>
+                                                <span><i class="far fa-user"></i> By <a href="#">{{ $blog->author }}</a> </span>
                                                 <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                                <span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-                                                <span class="d-block mt-2"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
+                                                <span><i class="far fa-comments"></i> <a href="#">12 Commentaires</a></span>
+                                                <span class="d-block mt-2"><a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}" class="btn btn-xs btn-light text-1 text-uppercase">Plus</a></span>
                                             </div>
 
                                         </div>
