@@ -16,13 +16,13 @@
                         <nav class="header-nav-top">
                             <ul class="nav nav-pills">
                                 <li class="nav-item nav-item-anim-icon d-none d-md-block">
-                                    <a class="nav-link ps-0" href="#"><i class="fas fa-angle-right"></i> A propos</a>
+                                    <a class="nav-link ps-0" href="{{ route('about', app()->getLocale()) }}"><i class="fas fa-angle-right"></i> A propos</a>
                                 </li>
                                 <li class="nav-item nav-item-anim-icon d-none d-md-block">
-                                    <a class="nav-link" href="#"><i class="fas fa-angle-right"></i> Contactez Nous</a>
+                                    <a class="nav-link" href="{{ route('contact', app()->getLocale()) }}"><i class="fas fa-angle-right"></i> Contactez Nous</a>
                                 </li>
                                 <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
-                                    <span class="ws-nowrap"><i class="fas fa-phone"></i> (123) 456-789</span>
+                                    <span class="ws-nowrap"><i class="fas fa-phone"></i> (+237) 691180397</span>
                                 </li>
                             </ul>
                         </nav>
@@ -34,7 +34,7 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li class="">
-                                            <a class="dropdown-item dropdown-toggle {{ str_contains(Route::currentRouteName(), "home") ? 'active': ''  }}" href="#">
+                                            <a class="dropdown-item dropdown-toggle {{ str_contains(Route::currentRouteName(), "home") ? 'active': ''  }}" href="{{ route('home', app()->getLocale()) }}">
                                                 Accueil
                                             </a>
                                         </li>
@@ -44,7 +44,7 @@
                                             </a>
                                         </li>
                                         <li class="">
-                                            <a class="dropdown-item dropdown-toggle {{ str_contains(Route::currentRouteName(), "about") ? 'active': ''  }}" href="#">
+                                            <a class="dropdown-item dropdown-toggle {{ str_contains(Route::currentRouteName(), "about") ? 'active': ''  }}" href="{{ route('about', app()->getLocale()) }}">
                                                 A Propos
                                             </a>
 
