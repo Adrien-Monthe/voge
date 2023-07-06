@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateBcategoryRequest;
 use App\Http\Requests\UpdateBcatergoryRequest;
 use App\Models\Bcategory;
 use App\Models\Bcatergory;
+use Illuminate\Support\Str;
 
 class BcategoryController extends Controller
 {
@@ -34,7 +35,7 @@ class BcategoryController extends Controller
     {
         $category_id = $request->category_id;
 
-        $codename = $this->clean($request->name_fr);
+        $codename = Str::slug($request->name_fr);
 
         $category = Bcategory::updateOrCreate(['id' => $category_id],
             [
