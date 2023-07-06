@@ -186,7 +186,7 @@
 
         <section class="section  border-0 m-0 pb-3">
             <h1 class="word-rotator text-center slide font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeInUpShorter">
-                <span>ACTUALITÉS SUR VFA </span>
+                <span style="color: #2B378B">ACTUALITÉS SUR VFA </span>
             </h1>
             <div class="container container-xl-custom">
                 <div class="row pb-1">
