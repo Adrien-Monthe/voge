@@ -6,6 +6,7 @@ use App\Http\Requests\StoreBtagRequest;
 use App\Http\Requests\UpdateBtagRequest;
 use App\Models\Btag;
 use Illuminate\Http\Response;
+use Illuminate\Support\Str;
 
 class BtagController extends Controller
 {
@@ -38,15 +39,12 @@ class BtagController extends Controller
     {
         $tag_id = $request->tag_id;
 
-        $codename = $this->clean($request->name_fr);
+        $codename = Str::slug($request->name_fr);
 
         $tag = Btag::updateOrCreate(['id' => $tag_id],
             [
                 'codename' => $codename,
 
-                'meta_keywords' => $request->meta_keywords,
-
-                'meta_description' => $request->meta_description,
 
                 'name' => [
                     'en' => $request->name_en,
