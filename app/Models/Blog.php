@@ -32,7 +32,7 @@ class Blog extends Model
         'youtube_code',
         'read_time',
         'reactions',
-        'bcatergory_id',
+        'bcategory_id',
         'deleted_at'];
 
     protected $casts = [
