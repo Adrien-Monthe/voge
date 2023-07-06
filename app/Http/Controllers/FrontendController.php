@@ -39,7 +39,7 @@ class FrontendController extends Controller
         $data['blog']->views = $data['blog']->views + 1;
         $data['blog']->save();
 
-        $data['categories'] = Bcatergory::orderBy('id', 'desc')->get();
+        $data['categories'] = Bcategory::orderBy('id', 'desc')->get();
         $data['tags'] = Btag::orderBy('id', 'desc')->get();
         $data['next_blog'] = Blog::orderBy('id', 'desc')->where('id', '!=', $data['blog']->id)->first();
         $data['prec_blog'] = Blog::orderBy('id', 'desc')->where('id', '!=', $data['blog']->id)->where('id', '!=', $data['next_blog']->id)->first();
@@ -50,6 +50,6 @@ class FrontendController extends Controller
         $data['recent_comments'] = Bcomment::orderBy('id', 'desc')->where('blog_id', $data['blog']->id)->paginate(3);
 
 
-        return view('frontend2.pages.blog.single-blog-livewire', $data);
+        return view('frontend.pages.blog.single-blog', $data);
     }
 }

@@ -9,6 +9,7 @@ use App\Models\Bcatergory;
 use App\Models\Blog;
 use App\Models\Btag;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -38,7 +39,7 @@ class BlogController extends Controller
     {
         $blog_id = $request->blog_id;
 
-        $codename = $this->clean($request->title_fr);
+        $codename = Str::slug($request->title_fr);
 
         $blog = Blog::updateOrCreate(['id' => $blog_id],
             [
@@ -54,15 +55,14 @@ class BlogController extends Controller
 
                 'comment_status' => false,
 
-                'meta_keywords' => $request->meta_keywords,
 
                 'visibility' => $request->visibility,
 
-                'meta_description' => $request->meta_description,
+
 
                 'views' => '0',
 
-                'bcatergory_id' => $request->category_id,
+                'bcategory_id' => $request->category_id,
 
                 'author' => $request->author,
 
@@ -164,7 +164,7 @@ class BlogController extends Controller
 
                 'visibility' => $request->visibility,
 
-                'bcatergory_id' => $request->category_id,
+                'bcategory_id' => $request->category_id,
 
                 'author' => $request->author,
 

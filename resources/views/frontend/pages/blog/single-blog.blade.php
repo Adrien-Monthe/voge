@@ -28,8 +28,8 @@
                     </div>
                     <div class="col-md-12 align-self-center order-1">
                         <ul class="breadcrumb d-block text-center">
-                            <li><a href="#">Home</a></li>
-                            <li class="active">Blog</li>
+                            <li><a href="#">Accueil</a></li>
+                            <li class="active">{{ $blog->title }}</li>
                         </ul>
                     </div>
                 </div>
@@ -41,12 +41,6 @@
             <div class="row">
                 <div class="col-lg-3">
                     <aside class="sidebar">
-                        <form action="https://www.okler.net/previews/porto/9.9.3/page-search-results.html" method="get">
-                            <div class="input-group mb-3 pb-1">
-                                <input class="form-control text-1" placeholder="Search..." name="s" id="s" type="text">
-                                <button type="submit" class="btn btn-dark text-1 p-2"><i class="fas fa-search m-2"></i></button>
-                            </div>
-                        </form>
                         <h5 class="font-weight-semi-bold pt-4">Categories</h5>
                         <ul class="nav nav-list flex-column mb-5">
                             <li class="nav-item"><a class="nav-link" href="#">Design (2)</a></li>
@@ -63,6 +57,7 @@
                             <li class="nav-item"><a class="nav-link" href="#">Lifestyle (2)</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Technology (1)</a></li>
                         </ul>
+
                         <div class="tabs tabs-dark mb-4 pb-2">
                             <ul class="nav nav-tabs">
                                 <li class="nav-item"><a class="nav-link show active text-1 font-weight-bold text-uppercase" href="#popularPosts" data-bs-toggle="tab">Popular</a></li>
@@ -169,6 +164,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <h5 class="font-weight-semi-bold pt-4">About Us</h5>
                         <p>Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Nulla nunc dui, tristique in semper vel. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. </p>
                         <h5 class="font-weight-semi-bold pt-4">Photos from Instagram</h5>
