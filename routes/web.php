@@ -7,6 +7,7 @@ use App\Http\Controllers\BtagController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\HeroController;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\SponsorController;
 use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
@@ -65,6 +66,9 @@ Route::group(['prefix' => '{language}'], function () {
 
         /** SPONSORS */
         Route::resource('sponsors', SponsorController::class);
+
+        /** IMAGES */
+        Route::resource('images', ImageController::class);
     });
 });
 
