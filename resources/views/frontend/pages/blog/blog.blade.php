@@ -132,8 +132,8 @@
 
                                                 <div class="post-meta">
                                                     <span><i class="far fa-user"></i> By <a href="#">{{ $blog->author }}</a> </span>
-                                                    <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                                    <span><i class="far fa-comments"></i> <a href="#">12 Commentaires</a></span>
+                                                    <span><i class="far fa-folder"></i> <a href="#">{{ $blog->category->name }}</a></span>
+                                                    <span><i class="far fa-comments"></i> <a href="#">{{ sizeof($blog->comments) }} Commentaires</a></span>
                                                     <span class="d-block mt-2"><a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}" class="btn btn-xs btn-light text-1 text-uppercase">Plus</a></span>
                                                 </div>
 

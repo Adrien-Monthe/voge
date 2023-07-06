@@ -52,8 +52,8 @@
                         </ul>
                         <div class="tabs tabs-dark mb-4 pb-2">
                             <ul class="nav nav-tabs">
-                                <li class="nav-item"><a class="nav-link show active text-1 font-weight-bold text-uppercase" href="#popularPosts" data-bs-toggle="tab">Popular</a></li>
-                                <li class="nav-item"><a class="nav-link text-1 font-weight-bold text-uppercase" href="#recentPosts" data-bs-toggle="tab">Recent</a></li>
+                                <li class="nav-item"><a class="nav-link show active text-1 font-weight-bold text-uppercase" href="#popularPosts" data-bs-toggle="tab">Populaires</a></li>
+                                <li class="nav-item"><a class="nav-link text-1 font-weight-bold text-uppercase" href="#recentPosts" data-bs-toggle="tab">Récents</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="popularPosts">
