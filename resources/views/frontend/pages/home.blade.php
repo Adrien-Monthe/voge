@@ -141,6 +141,23 @@
 
         </div>
 
+        <section style="margin-top: 40px !important; background-color: #2D663D !important" class="section section-secondary border-0 py-0 m-0 appear-animation" data-appear-animation="fadeIn">
+            <div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-between pb-5 pb-lg-0">
+                    <div class="col-lg-5 order-2 order-lg-1 pt-4 pt-lg-0 pb-5 pb-lg-0 mt-5 mt-lg-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+                        <h2 class="font-weight-bold text-color-light text-7 mb-2">UN PROJET AMIBITEUX</h2>
+                        <p class="lead font-weight-light text-color-light text-4">Une team unique et complémentaire, liée par la passion du football porte ce projet, qui au-delà, s’engage sur la formation professionnelle et humaine des jeunes, en leur proposant également une ouverture sur le monde.</p>
+                        <p class="font-weight-light text-color-light text-2 mb-4 opacity-7"></p>
+                        <a href="#" class="btn btn-dark-scale-2 btn-px-5 btn-py-2 text-2">Plus D'infos</a>
+                    </div>
+                    <div class="col-9 offset-lg-1 col-lg-5 order-1 order-lg-2 scale-2">
+                        <img class="img-fluid box-shadow-3 my-2 border-radius" src="/frontend/img/gallery/gallery-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
             <div class="home-concept mt-5">
                 <div class="container">
