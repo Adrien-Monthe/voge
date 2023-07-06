@@ -14,7 +14,8 @@ class FrontendController extends Controller
 {
     public function index()
     {
-        return view('frontend.pages.home');
+        $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(6)->get();
+        return view('frontend.pages.home', $data);
     }
 
     public function blog()
