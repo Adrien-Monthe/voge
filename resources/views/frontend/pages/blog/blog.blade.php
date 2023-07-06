@@ -115,7 +115,7 @@
                                     <article class="post post-medium border-0 pb-0 mb-5">
                                         <div class="post-image">
                                             <a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}">
-                                                <img src="{{ asset($blog->image_path) }}" style="height: 200px; object-fit: cover;" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="{{ $blog->title }}" />
+                                                <img src="{{ asset($blog->image_path) }}" style="widht: 100%; height: 200px; object-fit: cover;" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="{{ $blog->title }}" />
                                             </a>
                                         </div>
 
