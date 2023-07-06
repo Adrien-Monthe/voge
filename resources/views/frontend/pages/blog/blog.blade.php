@@ -108,35 +108,48 @@
                 <div class="col-lg-9">
                     <div class="blog-posts">
 
-                        <div class="row px-3">
+                        @php
+                            $counter = 0;
+                        @endphp
 
-                            @foreach($blogs as $blog)
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <article class="post post-medium border-0 pb-0 mb-5">
-                                        <div class="post-image">
-                                            <a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}">
-                                                <img src="{{ asset($blog->image_path) }}" style="width: 100%; height: 200px; object-fit: cover;" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="{{ $blog->title }}" />
-                                            </a>
-                                        </div>
+                        @foreach($blogs as $blog)
+                            @if ($counter % 3 === 0)
+                                <div class="row px-3">
+                                    @endif
 
-                                        <div class="post-content">
-
-                                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}">{{ $blog->title }}</a></h2>
-                                            <p>{{ $blog->short_description }}</p>
-
-                                            <div class="post-meta">
-                                                <span><i class="far fa-user"></i> By <a href="#">{{ $blog->author }}</a> </span>
-                                                <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-                                                <span><i class="far fa-comments"></i> <a href="#">12 Commentaires</a></span>
-                                                <span class="d-block mt-2"><a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}" class="btn btn-xs btn-light text-1 text-uppercase">Plus</a></span>
+                                    <div class="col-lg-4 col-md-4 col-sm-6">
+                                        <article class="post post-medium border-0 pb-0 mb-5">
+                                            <div class="post-image">
+                                                <a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}">
+                                                    <img src="{{ asset($blog->image_path) }}" style="width: 100%; height: 200px; object-fit: cover;" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="{{ $blog->title }}" />
+                                                </a>
                                             </div>
 
-                                        </div>
-                                    </article>
-                                </div>
-                            @endforeach
+                                            <div class="post-content">
 
-                        </div>
+                                                <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}">{{ $blog->title }}</a></h2>
+                                                <p>{{ $blog->short_description }}</p>
+
+                                                <div class="post-meta">
+                                                    <span><i class="far fa-user"></i> By <a href="#">{{ $blog->author }}</a> </span>
+                                                    <span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
+                                                    <span><i class="far fa-comments"></i> <a href="#">12 Commentaires</a></span>
+                                                    <span class="d-block mt-2"><a href="{{ route('single_blog_page', [app()->getLocale(),$blog->codename ] ) }}" class="btn btn-xs btn-light text-1 text-uppercase">Plus</a></span>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    @if (($counter + 1) % 3 === 0 || $loop->last)
+                                </div>
+                            @endif
+
+                            @php
+                                $counter++;
+                            @endphp
+                        @endforeach
+
 
                         <div class="row">
                             <div class="col">
