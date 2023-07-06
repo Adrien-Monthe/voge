@@ -52,4 +52,14 @@ class FrontendController extends Controller
 
         return view('frontend.pages.blog.single-blog', $data);
     }
+
+    public function about()
+    {
+        return view('frontend.pages.about');
+    }
+
+    public function contact()
+    {
+        return view('frontend.pages.contact');
+    }
 }

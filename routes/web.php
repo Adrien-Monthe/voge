@@ -27,6 +27,8 @@ Route::redirect('/', '/fr');
 Route::group(['prefix' => '{language}'], function () {
     Route::get('/', [App\Http\Controllers\FrontendController::class, 'index'])->name('home');
     Route::get('/blog', [App\Http\Controllers\FrontendController::class, 'blog'])->name('blog');
+    Route::get('/about', [App\Http\Controllers\FrontendController::class, 'about'])->name('about');
+    Route::get('/contact', [App\Http\Controllers\FrontendController::class, 'contact'])->name('contact');
     Route::get('/blog/{blog_id}', [App\Http\Controllers\FrontendController::class, 'single_blog_page'])->name('single_blog_page');
 
     Route::middleware([

@@ -17,4 +17,5 @@
 @section('page-title', __('home.page-title'))
 
 @section('content')
+
 @endsection
