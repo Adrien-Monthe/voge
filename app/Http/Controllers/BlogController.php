@@ -137,7 +137,7 @@ class BlogController extends Controller
      */
     public function edit($lang, Blog $blog)
     {
-        $data['categories'] = Bcatergory::orderBy('id', 'desc')->get();
+        $data['categories'] = Bcategory::orderBy('id', 'desc')->get();
         $data['tags'] = Btag::orderBy('id', 'desc')->get();
         $data['blog'] = $blog;
         return view('backend.pages.posts.edit-post', $data);
