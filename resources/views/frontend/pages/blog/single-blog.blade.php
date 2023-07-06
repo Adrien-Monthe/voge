@@ -138,7 +138,7 @@
                                 <div class="post-block mt-4 pt-2 post-author">
                                     <h4 class="mb-3">Auteur</h4>
                                     <div class="img-thumbnail img-thumbnail-no-borders d-block pb-3">
-                                        <a href="blog-post.html">
+                                        <a href="#">
                                             <img src="/frontend/img/avatars/avatar.jpg" alt="">
                                         </a>
                                     </div>
