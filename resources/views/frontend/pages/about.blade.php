@@ -74,7 +74,7 @@
                     </div>
                     <div class="col-md-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
                         <h3 class="font-weight-bold text-4 mb-2">Pourquoi VOGE FA</h3>
-                        <p>Voge FA est engagée à offrir une formation de haute qualité aux jeunes joueurs. Nous avons une équipe d'entraîneurs expérimentés et passionnés qui mettent l'accent sur le développement complet des joueurs, en se concentrant sur les aspects techniques, tactiques, physiques et mentaux du jeu.</p>
+                        <p>Voge FA est engagée à offrir une formation de haute qualité aux jeunes joueurs. Nos entraîneurs expérimentés et passionnés mettent l'accent sur le développement complet des joueurs, en se concentrant sur les aspects techniques, tactiques, physiques et mentaux du jeu.</p>
                     </div>
                 </div>
 
