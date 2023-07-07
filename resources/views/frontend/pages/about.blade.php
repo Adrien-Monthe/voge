@@ -57,7 +57,7 @@
                         </div>
                         <div class="overflow-hidden mb-3">
                             <p class="lead mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.
+                                VOGE FA prône des valeurs morales et éthiques. Les joueurs, les dirigeants et le personnel administratif et sportif s’engagent à s’y conformer, qu’ils soient hommes ou femmes.
                             </p>
                         </div>
                     </div>
