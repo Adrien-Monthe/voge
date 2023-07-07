@@ -167,7 +167,7 @@
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 text-center text-md-start mb-5 mb-md-0">
-                <h2 class="text-color-dark font-weight-normal text-6 mb-2 pb-1">Meet <strong class="font-weight-extra-bold">Our Team</strong></h2>
+                <h2 class="text-color-dark font-weight-normal text-6 mb-2 pb-1">Notre <strong class="font-weight-extra-bold">Equipe Dirigeante</strong></h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit massa enim. Nullam id varius nunc.</p>
                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. Vivamus bibendum magna ex, et faucibus lacus venenatis eget.</p>
             </div>
