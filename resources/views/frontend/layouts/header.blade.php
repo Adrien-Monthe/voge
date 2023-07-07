@@ -51,17 +51,14 @@
                                         </li>
                                         <li class="dropdown">
                                             <a class="dropdown-item dropdown-toggle {{ str_contains(Route::currentRouteName(), "academy") ? 'active': ''  }}" href="#">
-                                                Academies
+                                                Academy
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li class="">
-                                                    <a class="dropdown-item" href="#">Programmes</a>
-                                                </li>
                                                 <li class="">
                                                     <a class="dropdown-item" href="#">Staff</a>
                                                 </li>
                                                 <li class="">
-                                                    <a class="dropdown-item" href="#">Contact</a>
+                                                    <a class="dropdown-item" href="{{ route('contact', app()->getLocale()) }}">Contact</a>
                                                 </li>
 
                                             </ul>
