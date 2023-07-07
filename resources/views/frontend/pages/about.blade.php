@@ -90,7 +90,7 @@
                     <div class="counter">
                         <i class="icons icon-user text-color-light"></i>
                         <strong class="text-color-light font-weight-extra-bold" data-to="45000" data-append="+">0</strong>
-                        <label class="text-4 mt-1 text-color-light">Happy Clients</label>
+                        <label class="text-4 mt-1 text-color-light">Joueurs</label>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
@@ -122,9 +122,9 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
-                    <h2 class="text-color-dark font-weight-normal text-6 mb-2">Who <strong class="font-weight-extra-bold">We Are</strong></h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit massa enim. Nullam id varius nunc. </p>
-                    <p class="pe-5 me-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. Vivamus bibendum magna ex, et faucibus lacus venenatis eget</p>
+                    <h2 class="text-color-dark font-weight-normal text-6 mb-2">Qui <strong class="font-weight-extra-bold">sommes nous</strong></h2>
+                    <p class="lead">VOGE FOOTBALL ACADEMY en abrégé VFA a été créé le 04 novembre 2022 sous forme associative pour une durée illimitée.</p>
+                    <p class="pe-5 me-5">Son promoteur en la personne de Jules Berlin NDJEUGA, véritable passionné de football, est un banquier de formation (en Italie) et de profession (directeur dans une banque de la place).</p>
                 </div>
                 <div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 position-relative mt-sm-5" style="top: 1.7rem;">
                     <img src="/frontend/img/generic/generic-corporate-3-1.jpg" class="img-fluid position-absolute d-none d-sm-block appear-animation" data-appear-animation="expandIn" data-appear-animation-delay="300" style="top: 10%; left: -50%;" alt="" />
