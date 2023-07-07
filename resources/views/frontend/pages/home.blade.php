@@ -213,7 +213,7 @@
                                     <div class="featured-box-background" style="background-image: url(/frontend/img/gallery/gallery-2.jpg); background-size: cover; background-position: center;"></div>
                                     <div class="box-content px-lg-4 px-xl-5 py-lg-5">
                                         <div class="py-5 my-4">
-                                            <a class="text-decoration-none lightbox" href="https://vimeo.com/45830194" data-plugin-options="{'type':'iframe'}">
+                                            <a class="text-decoration-none lightbox" href="https://www.youtube.com/watch?v=Fib_174bZSM&t" data-plugin-options="{'type':'iframe'}">
                                                 <img class="icon-animated" width="60" src="/frontend/vendor/linea-icons/linea-music/icons/play-button.svg" alt="" data-icon data-plugin-options="{'color': '#FFF', 'animated': true, 'delay': 600, 'strokeBased': true}" />
                                             </a>
                                         </div>
