@@ -70,11 +70,11 @@
                     </div>
                     <div class="col-md-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
                         <h3 class="font-weight-bold text-4 mb-2">Notre Vision</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        <p>Nous aspirons à former des joueurs de football complets. Nous mettons l'accent sur le développement des compétences techniques, tactiques, physiques et mentales afin de produire des joueurs polyvalents, intelligents et créatifs sur le terrain.</p>
                     </div>
                     <div class="col-md-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
                         <h3 class="font-weight-bold text-4 mb-2">Pourquoi VOGE FA</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel consequat, ante nulla hendrerit arcu.</p>
+                        <p>Voge FA est engagée à offrir une formation de haute qualité aux jeunes joueurs. Nous avons une équipe d'entraîneurs expérimentés et passionnés qui mettent l'accent sur le développement complet des joueurs, en se concentrant sur les aspects techniques, tactiques, physiques et mentaux du jeu.</p>
                     </div>
                 </div>
 
