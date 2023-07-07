@@ -27,8 +27,8 @@
                 </div>
                 <div class="col-md-12 align-self-center order-1">
                     <ul class="breadcrumb breadcrumb-light d-block text-center">
-                        <li><a href="#">Home</a></li>
-                        <li class="active">Pages</li>
+                        <li><a href="#">Accueil</a></li>
+                        <li class="active">A Propos</li>
                     </ul>
                 </div>
             </div>
@@ -44,13 +44,15 @@
                     <div class="col-md-9 mx-md-auto">
                         <div class="overflow-hidden mb-3">
                             <h1 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
-                                <span>We are Porto, We </span>
+                                <span>VOGE FA, Nos Valeurs sont : </span>
                                 <span class="word-rotator-words bg-primary">
-												<b class="is-visible">Create</b>
-												<b>Build</b>
-												<b>Develop</b>
+												<b class="is-visible">Respect</b>
+												<b>Tolérance</b>
+												<b>Solidarité</b>
+                                                <b>Plaisir</b>
+                                                <b>Engagement</b>
 											</span>
-                                <span> Solutions</span>
+                                <span> </span>
                             </h1>
                         </div>
                         <div class="overflow-hidden mb-3">
