@@ -66,7 +66,7 @@
                 <div class="row mt-3 mb-5">
                     <div class="col-md-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="800">
                         <h3 class="font-weight-bold text-4 mb-2">Notre Mission</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        <p>Nous offrons une formation de football de haute qualité dispensée par des entraîneurs expérimentés et passionnés. Nous mettons l'accent sur le développement des compétences techniques, tactiques, physiques et mentales nécessaires pour exceller sur le terrain.</p>
                     </div>
                     <div class="col-md-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
                         <h3 class="font-weight-bold text-4 mb-2">Notre Vision</h3>
@@ -225,5 +225,7 @@
             </div>
         </div>
     </section>
+
+    @include('frontend.layouts.recent-blogs-section')
 
 @endsection

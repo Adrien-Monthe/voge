@@ -56,7 +56,8 @@ class FrontendController extends Controller
 
     public function about()
     {
-        return view('frontend.pages.about');
+        $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(6)->get();
+        return view('frontend.pages.about',$data);
     }
 
     public function contact()
