@@ -55,7 +55,7 @@
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li class="">
-                                                    <a class="dropdown-item" href="#">Staff</a>
+                                                    <a class="dropdown-item" href="{{ route('managing_team', app()->getLocale()) }}">Staff</a>
                                                 </li>
                                                 <li class="">
                                                     <a class="dropdown-item" href="{{ route('contact', app()->getLocale()) }}">Contact</a>
