@@ -64,4 +64,16 @@ class FrontendController extends Controller
     {
         return view('frontend.pages.contact');
     }
+
+    public function managing_team()
+    {
+        $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(6)->get();
+        return view('frontend.pages.team.managing-team',$data);
+    }
+
+    public function playing_team()
+    {
+        $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(6)->get();
+        return view('frontend.pages.team.players',$data);
+    }
 }

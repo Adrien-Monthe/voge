@@ -30,6 +30,8 @@ Route::group(['prefix' => '{language}'], function () {
     Route::get('/blog', [App\Http\Controllers\FrontendController::class, 'blog'])->name('blog');
     Route::get('/about', [App\Http\Controllers\FrontendController::class, 'about'])->name('about');
     Route::get('/contact', [App\Http\Controllers\FrontendController::class, 'contact'])->name('contact');
+    Route::get('/managing-team', [App\Http\Controllers\FrontendController::class, 'managing_team'])->name('managing_team');
+    Route::get('/players-team', [App\Http\Controllers\FrontendController::class, 'playing_team'])->name('playing_team');
     Route::get('/blog/{blog_id}', [App\Http\Controllers\FrontendController::class, 'single_blog_page'])->name('single_blog_page');
 
     Route::middleware([
