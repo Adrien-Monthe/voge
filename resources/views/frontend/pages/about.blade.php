@@ -145,12 +145,12 @@
                         <p class="text-2 mb-0">Responsable Juridique</p>
                     </div>
                     <div>
-                        <img class="img-fluid rounded-0 mb-4" src="/frontend/img/team/team-2.jpg" alt="" />
+                        <img class="img-fluid rounded-0 mb-4" src="/frontend/img/team/team-2.jpeg" alt="" />
                         <h3 class="font-weight-bold text-color-dark text-4 mb-0">Jules Berlin NDJEUGA</h3>
                         <p class="text-2 mb-0">Promoteur et Président</p>
                     </div>
                     <div>
-                        <img class="img-fluid rounded-0 mb-4" src="/frontend/img/team/team-3.jpg" alt="" />
+                        <img class="img-fluid rounded-0 mb-4" src="/frontend/img/team/team-3.jpeg" alt="" />
                         <h3 class="font-weight-bold text-color-dark text-4 mb-0">BIADOU Darling épouse MELINGUI</h3>
                         <p class="text-2 mb-0">Chargé de communication</p>
                     </div>
