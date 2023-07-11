@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1 class="text-dark font-weight-bold text-8">Les Dernières Nouvelles sur VOGE FC : </h1>
+                        <h1 class="text-dark font-weight-bold text-8">Les Dernières Nouvelles sur VOGE FA : </h1>
                         <span class="sub-title text-dark">Suivez les Performances de Notre Équipe !</span>
                     </div>
                     <div class="col-md-12 align-self-center order-1">
