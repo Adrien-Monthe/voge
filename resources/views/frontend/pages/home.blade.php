@@ -76,7 +76,7 @@
 													<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
 														<img src="/frontend/img/lazy.png" data-src="/frontend/img/slides/slide-title-border.png" class="w-auto appear-animation lazyload" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'imgFluid': false, 'minWindowWidth': 0}" alt="" />
 													</span>
-                                            WE CREATE DESIGNS, WE ARE
+                                            Réveillez les champions qui sommeillent en vous.
                                             <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
 														<img src="/frontend/img/lazy.png" data-src="/frontend/img/slides/slide-title-border.png" class="w-auto appear-animation lazyload" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'imgFluid': false, 'minWindowWidth': 0}" alt="" />
 													</span>
@@ -203,33 +203,89 @@
 
         @include('frontend.layouts.recent-blogs-section')
 
-        <div class="container my-5">
-            <div class="row py-5">
-                <div class="col">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="featured-boxes featured-boxes-modern-style-1">
-                                <div class="featured-box overlay overlay-show overlay-op-9 border-radius border-0">
-                                    <div class="featured-box-background" style="background-image: url(/frontend/img/gallery/gallery-2.jpg); background-size: cover; background-position: center;"></div>
-                                    <div class="box-content px-lg-4 px-xl-5 py-lg-5">
-                                        <div class="py-5 my-4">
-                                            <a class="text-decoration-none lightbox" href="https://www.youtube.com/watch?v=Fib_174bZSM&t" data-plugin-options="{'type':'iframe'}">
-                                                <img class="icon-animated" width="60" src="/frontend/vendor/linea-icons/linea-music/icons/play-button.svg" alt="" data-icon data-plugin-options="{'color': '#FFF', 'animated': true, 'delay': 600, 'strokeBased': true}" />
-                                            </a>
+        <div style="background-color: black; color: white">
+            <div class="container my-5" >
+                <div class="row py-5">
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="featured-boxes featured-boxes-modern-style-1">
+                                    <div class="featured-box overlay overlay-show overlay-op-9 border-radius border-0">
+                                        <div class="featured-box-background" style="background-image: url(/frontend/img/gallery/gallery-2.jpg); background-size: cover; background-position: center;"></div>
+                                        <div class="box-content px-lg-4 px-xl-5 py-lg-5">
+                                            <div class="py-5 my-4">
+                                                <a class="text-decoration-none lightbox" href="https://www.youtube.com/watch?v=Fib_174bZSM&t" data-plugin-options="{'type':'iframe'}">
+                                                    <img class="icon-animated" width="60" src="/frontend/vendor/linea-icons/linea-music/icons/play-button.svg" alt="" data-icon data-plugin-options="{'color': '#FFF', 'animated': true, 'delay': 600, 'strokeBased': true}" />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-5 text-center text-lg-start">
-                            <h4 class="text-6 font-weight-bold line-height-5 mt-4 mt-lg-0">Revivez nos moments forts sur notre chaine youtube</h4>
-                            <p>Nous vous encourageons également à soutenir notre travail en appréciant les vidéos, en les partageant avec vos amis et en vous abonnant à notre chaîne. En vous abonnant, vous ne manquerez aucune nouvelle vidéo et vous nous aiderez à continuer à grandir et à partager notre passion pour le football avec le monde entier.</p>
-                            <a href="#" class="d-inline-flex align-items-center btn btn-dark text-color-light font-weight-bold px-4 btn-py-2 text-1 rounded">VOGE FA <i class="fa fa-arrow-right ms-2 ps-1 text-3"></i></a>
+                            <div class="col-lg-5 text-center text-lg-start">
+                                <h4 class="text-6 font-weight-bold line-height-5 mt-4 mt-lg-0" style="color: white">Revivez nos moments forts sur notre chaine youtube</h4>
+                                <p style="color: white">Nous vous encourageons également à soutenir notre travail en appréciant les vidéos, en les partageant avec vos amis et en vous abonnant à notre chaîne. En vous abonnant, vous ne manquerez aucune nouvelle vidéo et vous nous aiderez à continuer à grandir et à partager notre passion pour le football avec le monde entier.</p>
+                                <a href="#" class="d-inline-flex align-items-center btn btn-dark text-color-light font-weight-bold px-4 btn-py-2 text-1 rounded">VOGE FA <i class="fa fa-arrow-right ms-2 ps-1 text-3"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+
+
+
+        <section class=" border-0 bg-transparent m-0" id="start">
+            <div class="container py-5 mb-3">
+                <div class="row">
+                    <div class="col text-center">
+
+                        <div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+                            <hr class="bg-primary border-radius m-auto">
+                        </div>
+                        <div class="overflow-hidden mb-1">
+                            <h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Rejoignez Nous</h3>
+                        </div>
+                        <h2 class="text-color-dark font-weight-bold text-8 pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Vous voulez vivre votre passion du Football ?</h2>
+
+                    </div>
+                </div>
+                <div class="row pt-4 pb-5">
+                    <div class="col-lg-6 pt-5 mt-5 pt-lg-0 mt-lg-0">
+                        <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                            <p class="font-weight-medium text-4-5 line-height-5">VOGE FOOTBALL ACADEMY vous ouvre ses portes. Les inscriptions sont ouvertes pour la nouvelle année 2023. Venez réaliser votre rêve avec nous.</p>
+
+
+                            <ul class="list list-icons list-icons-style-2 list-icons-lg">
+                                <li class="line-height-9 text-3-5 mb-1">
+                                    <i class="fas fa-check border-width-2 text-3"></i>Intégrez une equipe de joueurs talentueux
+                                </li>
+                                <li class="line-height-9 text-3-5 mb-1">
+                                    <i class="fas fa-check border-width-2 text-3"></i>Faites vous former par les meilleurs
+                                </li>
+                                <li class="line-height-9 text-3-5 mb-1">
+                                    <i class="fas fa-check border-width-2 text-3"></i>Donnez le meilleur de vous même
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-block pt-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                            <a href="#" class="btn btn-modern btn-primary btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms">Constituez votre dossier d'inscription <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center p-relative ">
+
+
+                        <div class="appear-animation custom-element-wrapper custom-element-11 p-relative " data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                            <img class="img-fluid" src="/frontend/img/home/7.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
     </div>
 @endsection

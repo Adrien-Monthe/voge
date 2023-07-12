@@ -13,7 +13,7 @@
 <body data-plugin-page-transition>
 <div class="body">
 
-    @include('frontend.layouts.header')
+    @include('frontend.layouts.header-2')
 
     @yield('content')
 
