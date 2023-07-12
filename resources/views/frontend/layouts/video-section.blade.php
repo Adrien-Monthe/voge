@@ -6,7 +6,7 @@
                     <div class="col-lg-6">
                         <div class="featured-boxes featured-boxes-modern-style-1">
                             <div class="featured-box overlay overlay-show overlay-op-9 border-radius border-0">
-                                <div class="featured-box-background" style="background-image: url(/frontend/img/gallery/gallery-2.jpg); background-size: cover; background-position: center;"></div>
+                                <div class="featured-box-background" style="background-image: url(/frontend/img/slides/3.jpeg); background-size: cover; background-position: center;"></div>
                                 <div class="box-content px-lg-4 px-xl-5 py-lg-5">
                                     <div class="py-5 my-4">
                                         <a class="text-decoration-none lightbox" href="https://www.youtube.com/watch?v=Fib_174bZSM&t" data-plugin-options="{'type':'iframe'}">
