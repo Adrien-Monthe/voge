@@ -29,6 +29,9 @@ Route::group(['prefix' => '{language}'], function () {
     Route::get('/', [App\Http\Controllers\FrontendController::class, 'index'])->name('home');
     Route::get('/blog', [App\Http\Controllers\FrontendController::class, 'blog'])->name('blog');
     Route::get('/about', [App\Http\Controllers\FrontendController::class, 'about'])->name('about');
+    Route::get('/ethics', [App\Http\Controllers\FrontendController::class, 'ethics'])->name('ethics');
+    Route::get('/gallery', [App\Http\Controllers\FrontendController::class, 'gallery'])->name('gallery');
+    Route::get('/register-player', [App\Http\Controllers\FrontendController::class, 'register_player'])->name('register_player');
     Route::get('/contact', [App\Http\Controllers\FrontendController::class, 'contact'])->name('contact');
     Route::get('/managing-team', [App\Http\Controllers\FrontendController::class, 'managing_team'])->name('managing_team');
     Route::get('/players-team', [App\Http\Controllers\FrontendController::class, 'playing_team'])->name('playing_team');

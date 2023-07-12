@@ -76,4 +76,22 @@ class FrontendController extends Controller
         $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(6)->get();
         return view('frontend.pages.team.players',$data);
     }
+
+    public function register_player()
+    {
+        $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(6)->get();
+        return view('frontend.pages.register',$data);
+    }
+
+    public function ethics()
+    {
+        $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(6)->get();
+        return view('frontend.pages.ethics',$data);
+    }
+
+    public function gallery()
+    {
+        $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(6)->get();
+        return view('frontend.pages.gallery.gallery',$data);
+    }
 }
