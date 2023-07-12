@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div style="background-image:url('/frontend/img/bg.jpg'); background-repeat: no-repeat; ">
+        <div style="background-image:url('/frontend/img/bg.jpg'); background-repeat: no-repeat; background-size:cover; ">
             <div class="header-container container">
                 <div class="header-row">
                     <div class="header-column">

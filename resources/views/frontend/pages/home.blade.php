@@ -251,8 +251,8 @@
 
                     </div>
                 </div>
-                <div class="row pt-4 pb-5">
-                    <div class="col-lg-6 pt-5 mt-5 pt-lg-0 mt-lg-0">
+                <div class="row pt-4 pb-4">
+                    <div class="col-lg-6 pt-5 mb-5 pt-lg-0 mt-lg-0">
                         <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
                             <p class="font-weight-medium text-4-5 line-height-5">VOGE FOOTBALL ACADEMY vous ouvre ses portes. Les inscriptions sont ouvertes pour la nouvelle année 2023. Venez réaliser votre rêve avec nous.</p>
 
