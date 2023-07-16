@@ -18,4 +18,24 @@
 
 
 @section('content')
+    <div role="main" class="main">
+        <section class="page-header page-header-modern page-header-background page-header-background-lg overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(/frontend/img/page-header/page-header-background-transparent.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 align-self-center p-static order-2 text-center">
+                        <h1>Visitez notre<strong> bibliothèque d'image</strong></h1>
+                    </div>
+                    <div class="col-md-12 align-self-center order-1">
+                        <ul class="breadcrumb breadcrumb-light d-block text-center">
+                            <li><a href="#">Accueil</a></li>
+                            <li class="active">Gallerie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-header-extra-button text-center">
+                <a href="#main" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-primary btn-rounded-icon"><i class="fas fa-arrow-down"></i></a>
+            </div>
+        </section>
+    </div>
 @endsection

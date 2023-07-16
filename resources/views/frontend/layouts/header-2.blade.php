@@ -97,16 +97,16 @@
                                                 </a>
                                                 <ul class="dropdown-menu">
                                                     <li class="">
-                                                        <a class="dropdown-item" href="#">Gallerie</a>
+                                                        <a class="dropdown-item" href="{{ route('gallery', app()->getLocale()) }}">Gallerie</a>
                                                     </li>
                                                     <li class="">
-                                                        <a class="dropdown-item" href="#">Code Éthique</a>
+                                                        <a class="dropdown-item" href="{{ route('ethics', app()->getLocale()) }}">Code Éthique</a>
                                                     </li>
 
                                                 </ul>
                                             </li>
                                             <li class="">
-                                                <a class="dropdown-item dropdown-toggle {{ str_contains(Route::currentRouteName(), "sign") ? 'active': ''  }}" href="#">
+                                                <a class="dropdown-item dropdown-toggle {{ str_contains(Route::currentRouteName(), "register_player") ? 'active': ''  }}" href="{{ route('register_player', app()->getLocale()) }}">
                                                     S'inscrire
                                                 </a>
                                             </li>
