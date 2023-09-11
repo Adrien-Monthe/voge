@@ -23,12 +23,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1>Extra <strong>Scroll to Content</strong></h1>
+                        <h1>Rejoignez <strong>Notre Equipe</strong></h1>
                     </div>
                     <div class="col-md-12 align-self-center order-1">
                         <ul class="breadcrumb breadcrumb-light d-block text-center">
-                            <li><a href="#">Home</a></li>
-                            <li class="active">Features</li>
+                            <li><a href="#">Accueil</a></li>
+                            <li class="active">Inscription</li>
                         </ul>
                     </div>
                 </div>
